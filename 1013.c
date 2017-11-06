@@ -1,4 +1,5 @@
 #include<stdio.h>
+#include<math.h>
 int isprime(int n)
 {
 	int i;
@@ -12,14 +13,14 @@ int isprime(int n)
 			return 0;
 		else
 		{
-			for(i=2;i<=(n+1)/2;i++)
+			for(i=2;i<=sqrt(n);i++)
 			{
 				if(!(n%i)) 
 				{
 					return 0; 
 					break; 
 				}
-				else if(i+1>(n+1)/2)
+				else if(i+1>(sqrt(n)+1))
 					return 1;
 			}
 		}
