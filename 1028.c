@@ -84,7 +84,7 @@ int main(){
 		printf("0");
 	else{
 		qsort(t, count, sizeof(man), comp);
-		printf("%d %s %s", count, t[0].name, t[count-1].name);
+		printf("%d %s %s", count, t[0].name, t[count - 1].name);
 	}
 	return 0;	
 }
